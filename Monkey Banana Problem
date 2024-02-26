@@ -50,5 +50,4 @@ solve(State, Actions) :-
     not(member(Result, State)),
     solve(Result, RestOfActions),
     Actions = [Action | RestOfActions].
-% example
-% solve([at(floor, monkey), at(floor, box), at(ceiling, banana)], Actions).
+
